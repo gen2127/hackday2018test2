@@ -18,13 +18,13 @@ void setup() {
   // put your setup code here, to run once:
   lcd.print("hatodokei");
   #if 1
-    setTime(9, 43, 0, 19, 6, 2016);
+    setTime(23, 59, 45, 19, 6, 2016);
   #else
     setTime(86400);
   #endif
 
   Serial.begin(1000000);
-  servo.attach(3);
+  servo.attach(2);
   delay(2000);
   lcd.clear();
   lcd.setCursor(2,1);
@@ -36,8 +36,16 @@ void loop() {
   nowtime = hour();
   nowminute = minute();
   nowsecond = second();
+  if(nowsecond==0){
+      lcd.setCursor(6,1);
+      lcd.print(0);
+      lcd.setCursor(7,1);
+      lcd.print(0);
+  }
   if(nowsecond > presecond){
     if(nowsecond<10){
+      lcd.setCursor(6,1);
+      lcd.print(0);
       lcd.setCursor(7,1);
       lcd.print(nowsecond);
     }else{
@@ -45,8 +53,16 @@ void loop() {
       lcd.print(nowsecond);
     }
   }
+  if(nowminute==0){
+      lcd.setCursor(3,1);
+      lcd.print(0);
+      lcd.setCursor(4,1);
+      lcd.print(0);
+  }
   if(nowminute > preminute){
     if(nowminute<10){
+      lcd.setCursor(3,1);
+      lcd.print(0);
       lcd.setCursor(4,1);
       lcd.print(nowminute);
     }else{
@@ -54,16 +70,28 @@ void loop() {
       lcd.print(nowminute);
     }
   }
+  if(nowtime==0){
+      lcd.setCursor(0,1);
+      lcd.print(0);
+      lcd.setCursor(1,1);
+      lcd.print(0);
+  }
   if(nowtime > pretime){
     if(nowtime<10){
       lcd.setCursor(0,1);
+      lcd.print(0);
+      lcd.setCursor(1,1);
       lcd.print(nowtime);
     }else{
-      lcd.setCursor(1,1);
+      lcd.setCursor(0,1);
       lcd.print(nowtime);
     }
   }
   pretime = nowtime;
   preminute = nowminute;
   presecond = nowsecond;
+  Serial.print(nowminute);
+  Serial.print(" ");
+  Serial.println(nowsecond);
+  
 }
