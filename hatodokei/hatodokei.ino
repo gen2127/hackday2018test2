@@ -29,7 +29,7 @@ void setup() {
   
   lcd.print("hatodokei");
   #if 1
-    setTime(12, 00, 45, 19, 6, 2016);
+    setTime(23, 59, 45, 19, 6, 2016);
   #else
     setTime(86400);
   #endif
@@ -48,7 +48,7 @@ void loop() {
   nowtime = hour();
   nowminute = minute();
   nowsecond = second();
-  MS = analogRead(A0);
+  MS = analogRead(A5);
   
   if(MS<5){
     switchCount += 1;
@@ -124,7 +124,7 @@ void loop() {
   if(ugoku==2){
     valServo -= 100;
     servo.write(valServo);
-    if(valServo<544){
+    if(valServo<=544){
       ugoku = 0;
     }
   }
@@ -137,6 +137,6 @@ void loop() {
   }
   //Serial.print(nowminute);
   //Serial.print(" ");
-  Serial.println(switchCount);
+  Serial.println(valServo);
   delay(50);
 }
