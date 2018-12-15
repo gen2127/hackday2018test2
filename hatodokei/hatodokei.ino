@@ -16,12 +16,17 @@ int presecond;
 int primeCount = 0;
 int ugoku = 0;
 int valServo = 544;
+//int switch1 = 0;
+int switchCount = 0;
+double MS;
 
 int primeNumber[ ] = {2 , 3, 5, 7, 11,  13,  17,  19,
 23, 29,  31,  37,  41,  43,  47,  53,  59};
 
 void setup() {
   // put your setup code here, to run once:
+  pinMode(A0,INPUT);
+  
   lcd.print("hatodokei");
   #if 1
     setTime(12, 00, 45, 19, 6, 2016);
@@ -43,6 +48,18 @@ void loop() {
   nowtime = hour();
   nowminute = minute();
   nowsecond = second();
+  MS = analogRead(A0);
+  
+  if(MS<5){
+    switchCount += 1;
+  }else{
+    switchCount = 0;
+  }
+  
+  if(switchCount>5){
+    ugoku=1;
+  }
+  
   if(nowsecond==0){
       lcd.setCursor(6,1);
       lcd.print(0);
@@ -118,8 +135,8 @@ void loop() {
       ugoku = 2;
     }
   }
-  Serial.print(nowminute);
-  Serial.print(" ");
-  Serial.println(nowsecond);
+  //Serial.print(nowminute);
+  //Serial.print(" ");
+  Serial.println(switchCount);
   delay(50);
 }
