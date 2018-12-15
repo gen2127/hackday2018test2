@@ -25,7 +25,7 @@ int primeNumber[ ] = {2 , 3, 5, 7, 11,  13,  17,  19,
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(A0,INPUT);
+  pinMode(A5,INPUT);
   
   lcd.print("hatodokei");
   #if 1
@@ -39,7 +39,7 @@ void setup() {
   servo.write(544);
   delay(2000);
   lcd.clear();
-  lcd.setCursor(2,1);
+  lcd.setCursor(6,1);
   lcd.print(":");
 }
 
@@ -61,53 +61,53 @@ void loop() {
   }
   
   if(nowsecond==0){
-      lcd.setCursor(6,1);
+      lcd.setCursor(10,1);
       lcd.print(0);
-      lcd.setCursor(7,1);
+      lcd.setCursor(11,1);
       lcd.print(0);
   }
   if(nowsecond > presecond){
     if(nowsecond<10){
-      lcd.setCursor(6,1);
+      lcd.setCursor(10,1);
       lcd.print(0);
-      lcd.setCursor(7,1);
+      lcd.setCursor(11,1);
       lcd.print(nowsecond);
     }else{
-      lcd.setCursor(6,1);
+      lcd.setCursor(10,1);
       lcd.print(nowsecond);
     }
   }
   if(nowminute==0){
-      lcd.setCursor(3,1);
+      lcd.setCursor(7,1);
       lcd.print(0);
-      lcd.setCursor(4,1);
+      lcd.setCursor(8,1);
       lcd.print(0);
   }
   if(nowminute > preminute){
     if(nowminute<10){
-      lcd.setCursor(3,1);
+      lcd.setCursor(7,1);
       lcd.print(0);
-      lcd.setCursor(4,1);
+      lcd.setCursor(8,1);
       lcd.print(nowminute);
     }else{
-      lcd.setCursor(3,1);
+      lcd.setCursor(7,1);
       lcd.print(nowminute);
     }
   }
   if(nowtime==0){
-      lcd.setCursor(0,1);
+      lcd.setCursor(4,1);
       lcd.print(0);
-      lcd.setCursor(1,1);
+      lcd.setCursor(5,1);
       lcd.print(0);
   }
   if(nowtime > pretime){
     if(nowtime<10){
-      lcd.setCursor(0,1);
+      lcd.setCursor(4,1);
       lcd.print(0);
-      lcd.setCursor(1,1);
+      lcd.setCursor(5,1);
       lcd.print(nowtime);
     }else{
-      lcd.setCursor(0,1);
+      lcd.setCursor(4,1);
       lcd.print(nowtime);
     }
   }
