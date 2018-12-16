@@ -1,9 +1,17 @@
 CSF,0,8,1
 800,450,20,8
-29
+41
 15,,½Ìß×²Ä,,,,title,800,450,0,0,False,0,0,0,0
 12,,½Ìß×²Ä,,,,shot2,800,450,0,0,False,0,0,0,0
 11,,½Ìß×²Ä,,,,shot1,800,450,0,0,False,0,0,0,0
+37,,½Ìß×²Ä,,,,blockR2,800,450,0,0,False,0,0,0,0
+36,,½Ìß×²Ä,,,,blockR1,800,450,0,0,False,0,0,0,0
+35,,½Ìß×²Ä,,,,blockB2,800,450,0,0,False,0,0,0,0
+34,,½Ìß×²Ä,,,,blockB1,100,100,0,0,False,0,0,0,0
+30,.\blockB1.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
+31,.\blockB2.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
+32,.\blockR1.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
+33,.\blockR2.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
 8,,½Ìß×²Ä,ink2,,ExportTop,ink2,600,400,0,0,False,0,0,0,0
 7,,½Ìß×²Ä,ink1,,ExportTop,ink1,600,400,0,0,False,0,0,0,0
 17,.\start1.png,‰æ‘œ,,,,False,0,0,0,False,CR,100,False,70
@@ -13,7 +21,10 @@ CSF,0,8,1
 -1,,SÌ«ÙÀÞ,,,,title,0,True
 22,,½Ìß×²Ä,,,,score1,800,450,0,0,False,0,0,0,0
 14,,Ã·½Ä,,,,,-1234567890,‚l‚r ‚o–¾’©,4,36,32,0,0,True,False,0,0,0,2,True,True,False,False,False,False,False,False,False,rest_time,False,0,0,1,1,True,False,False,1
-28,,Ã·½Ä,,,,Press Enter key.,,‚l‚r –¾’©,256,32,32,0,0,True,False,0,0,0,2,True,False,False,0,0,1,1,True,False,False,1
+29,,½Ìß×²Ä,,,,select_weapon,800,450,0,0,False,0,0,0,0
+39,,Ã·½Ä,,,,,1234567890-,‚l‚r ƒSƒVƒbƒN,4,36,32,0,0,False,False,0,0,0,0,True,True,False,False,False,False,False,False,False,sR,False,0,0,1,1,True,False,False,1
+38,,Ã·½Ä,,,,,123456789-,‚l‚r ƒSƒVƒbƒN,4,36,32,0,0,False,False,0,0,0,0,True,True,False,False,False,False,False,False,False,sB,False,0,0,1,1,True,False,False,1
+28,,Ã·½Ä,,,,Press R key.,,‚l‚r –¾’©,192,32,32,0,0,True,False,0,0,0,2,True,False,False,0,0,1,1,True,False,False,1
 26,,Ã·½Ä,,,,,-1234567890.,@HGP‘n‰pŠpÎß¯Ìß‘Ì,4,36,32,0,0,False,False,0,0,0,0,True,True,False,False,False,False,False,False,False,Gscore,False,0,0,1,1,True,False,False,1
 27,,Ã·½Ä,,,,,-1234567890.,@HGP‘n‰pŠpÎß¯Ìß‘Ì,4,36,32,0,0,False,False,0,0,0,0,True,True,False,False,False,False,False,False,False,Rscore,False,0,0,1,1,True,False,False,1
 24,.\greenBar.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
@@ -29,7 +40,15 @@ CSF,0,8,1
 1,.\character1.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
 2,.\character2.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
 3,.\ink1.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
+40,,Ã·½Ä,,,,Select your weapon,,‚l‚r ƒSƒVƒbƒN,288,32,32,0,0,True,False,0,0,0,2,True,False,False,0,0,1,1,True,False,False,1
 4,.\ink2.pdr,ÍÞ¸À,,,,False,False,0,0,0,0,0,0,0,0,False,False,False,0,0,1024
+0
+0
+0
+0
+0
+0
+0
 0
 0
 0
@@ -53,6 +72,22 @@ CSF,0,8,1
 1,1,False,False,True,-100,-100,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,0,0,0,0,0,0,0,0,False
 1
+33,,,0,,,-1,0,0,,,,True,1
+1,1,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,0,0,0,0,0,0,0,0,False
+1
+32,,,0,,,-1,0,0,,,,True,1
+1,1,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,0,0,0,0,0,0,0,0,False
+1
+31,,,0,,,-1,0,0,,,,True,1
+1,1,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,0,0,0,0,0,0,0,0,False
+1
+30,,,0,,,-1,0,0,,,,True,1
+1,1,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,0,0,0,0,0,0,0,0,False
+1
 4,,,0,,,-1,0,0,,,,True,1
 1,1,False,False,True,0,0,0,0,True,100000,100000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,0,0,0,0,0,0,0,0,False
@@ -60,6 +95,7 @@ CSF,0,8,1
 3,,,0,,,-1,0,0,,,,True,1
 1,1,False,False,True,0,0,0,0,True,100000,100000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,0,0,0,0,0,0,0,0,False
+0
 0
 0
 1
@@ -75,14 +111,14 @@ CSF,0,8,1
 1,,,0,,,-1,0,0,,,,True,1
 1,1,False,False,True,-100,-100,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,0,0,0,0,0,0,0,0,False
-23
+32
 13,,,0,,,-1,0,0,,,,True,1
 10,1,False,False,True,10,10,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,True,0,Left,False,20,
 -4,result,,0,,,-1,0,0,,,,True,1
 1,1,False,False,True,,5,True,
 28,,,0,,,-1,0,0,,,,True,1
-11,1,False,False,True,265,200,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+11,1,False,False,True,300,200,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,True,0,Left,False,20,
 26,,,0,,,-1,0,0,,,,True,1
 11,1,False,False,True,60,380,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
@@ -106,7 +142,7 @@ CSF,0,8,1
 	this._xscale= countG*2/(countG+countR)*100;
 }
 onClipEvent(enterFrame){
-	if(Key.isDown(13)){
+	if(Key.isDown(82)){
 _root.gotoAndStop(1);
 	}
 }",-1,0,0,,,,True,1
@@ -226,8 +262,11 @@ onClipEvent(enterFrame){
 vx = 0;
 vy = 0;
 this._xscale = -20;
+isDeath=0;
+deathPena=60;
 }
 onClipEvent(enterFrame){
+if(isDeath==0){
 if(Key.isDown(Key.UP)){
 vy -= 5;
 }
@@ -280,6 +319,32 @@ if(this._y>430){
 this._y = 430;
 vy *= -1;
 }
+		if(_root.character2.hitTest(_root.shot1)){
+		isDeath=1;
+ 		this._alpha=50;
+		}
+	}
+	if(isDeath==1){
+		deathPena--;
+		if(deathPena<0){
+		isDeath=0;
+		deathPena=60;
+		this._alpha=100;
+		}
+		else if(deathPena<20){
+		this._x=700;
+		this._y=225;
+		this._alpha=50;
+		this._visible=true;
+		}
+		else if(deathPena<30){
+		this._visible=false;
+		this._rotation=0;
+		}
+		else if(deathPena<60){
+		this._rotation-=18;
+		}
+	}
 }",-1,0,0,,,,True,1
 10,1,False,False,True,700,225,0,0,False,2000,2000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,False,0,Left,False,20,
@@ -434,37 +499,176 @@ this._y = _root.character2._y;
 10,2,False,False,True,-10,-10,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,False,0,Left,False,20,
 -4,title,,0,,,-1,0,0,,,,True,1
-1,1,False,False,True,,5,False,
+1,1,False,False,True,,4,True,
 15,,,0,,"onClipEvent(load){
-count=0;
-_root.stop();
-}
+count=0;}
 
 onClipEvent(enterFrame){
 count++;
 if(count==20){
-_root.gotoAndStop(2);
+_root.gotoAndStop(4);
 }
 if(count==40){
-_root.gotoAndStop(3);
+_root.gotoAndStop(5);
 }
 if(count==50){
 _root.gotoAndStop(10);
 }
 }",-1,0,0,,,,True,1
-1,3,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+3,3,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,False,0,Left,False,20,
 19,,,0,,,-1,0,0,,,,True,1
-1,1,False,False,True,210,280,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
-0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
-18,,,0,,,-1,0,0,,,,True,1
-2,1,False,False,True,210,280,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
-0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
-17,,,0,,,-1,0,0,,,,True,1
 3,1,False,False,True,210,280,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+18,,,0,,,-1,0,0,,,,True,1
+4,1,False,False,True,210,280,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+17,,,0,,,-1,0,0,,,,True,1
+5,1,False,False,True,210,280,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+-4,select,,0,,,-1,0,0,,,,True,1
+1,1,False,False,True,,9,True,
+29,select_weapon,select_weapon,0,,"onClipEvent(load){
+_root.stop();
+selectB=1;
+selectR=1;
+waitB=3;
+waitR=3;
+isBChanged=0;
+isRChanged=0;
+bukimax=2;
+}
+
+onClipEvent(enterFrame){
+if(on(release)){
+	_root.gotoAndStop(3);
+	}
+if(isBChanged==0){
+	if(Key.isDown(87)){
+		selectB--;
+		isBChanged=1;
+	}
+	if(Key.isDown(90)){
+		selectB++;
+		isBChanged=1;
+	}	
+	while(selectB<1){
+		selectB+=2;
+	}
+	while(selectB>bukimax){
+		selectB-=2;
+	}
+} 
+if(isBChanged==1) {
+	waitB--;
+	if(waitB<0){
+		waitB = 3;
+		isBChanged=0;
+	}
+}
+if(isRChanged==0){
+	if(Key.isDown(38)){
+		selectR--;
+		isRChanged=1;
+	}
+	if(Key.isDown(40)){
+		selectR++;
+		isRChanged=1;
+	}	
+	while(selectR<1){
+		selectR+=2;
+	}
+	while(selectR>bukimax){
+		selectR-=2;
+	}
+} 
+if(isRChanged==1) {
+	waitR--;
+	if(waitR<0){
+		waitR = 3;
+		isRChanged=0;
+	}
+}
+	_root.sB=selectB;
+	_root.sR=selectR;
+}",-1,0,0,,,,True,1
+1,1,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,False,0,Left,False,20,
+40,,,0,,,-1,0,0,,,,True,1
+1,1,False,False,True,250,20,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,True,0,Left,False,20,
+39,,,0,,,-1,0,0,,,,True,1
+1,1,False,False,True,780,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,True,0,Left,False,20,
+38,,,0,,,-1,0,0,,,,True,1
+1,1,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,True,0,Left,False,20,
+34,,,0,,"onClipEvent(load){
+	this._xscale=120;
+	this._yscale=120;
+}
+
+onClipEvent(enterFrame){
+		if(_root.select_weapon.selectB==1){
+			this._xscale=120;
+			this._yscale=120;
+		} else{
+			this._xscale=100;
+			this._yscale=100;
+		}
+	}",-1,0,0,,,,True,1
+1,1,False,False,True,150,150,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,False,0,Left,False,20,
+35,,,0,,"onClipEvent(load){
+	this._xscale=100;
+	this._yscale=100;
+}
+
+onClipEvent(enterFrame){
+		if(_root.select_weapon.selectB==2){
+		this._xscale=120;
+		this._yscale=120;
+	} else{
+		this._xscale=100;
+		this._yscale=100;
+	}
+}",-1,0,0,,,,True,1
+1,1,False,False,True,150,300,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,False,0,Left,False,20,
+36,,,0,,"onClipEvent(load){
+	this._xscale=120;
+	this._yscale=120;
+}
+
+onClipEvent(enterFrame){
+		if(_root.select_weapon.selectR==1){
+			this._xscale=120;
+			this._yscale=120;
+		} else{
+			this._xscale=100;
+			this._yscale=100;
+		}
+	}",-1,0,0,,,,True,1
+1,1,False,False,True,500,150,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,False,0,Left,False,20,
+37,,,0,,"onClipEvent(load){
+	this._xscale=100;
+	this._yscale=100;
+}
+
+onClipEvent(enterFrame){
+		if(_root.select_weapon.selectR==2){
+		this._xscale=120;
+		this._yscale=120;
+	} else{
+		this._xscale=100;
+		this._yscale=100;
+	}
+}",-1,0,0,,,,True,1
+1,1,False,False,True,500,300,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,False,in,False,0,Left,False,20,
 16,,,0,,,-1,0,0,,,,True,1
-1,3,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
+1,6,False,False,True,0,0,0,0,True,10000,10000,0,100,0,0,0,0,XY,False,0,0
 0,False,100,100,100,100,0,0,0,0,False,0,0,0,100,2,2,45,5,1,False,False,True,2,False,4,4,2,False,255,255,0,100,10,10,1,False,False,True,2,False,0,0,0,100,255,255,255,100,2,2,45,5,1,True,False,True,False,2,False,5,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,False,False,False,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
 -1,,,0,,,-1,0,0,,,,True,1
 1,11,True,False,True,255,255,255
