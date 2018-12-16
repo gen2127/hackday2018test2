@@ -15,7 +15,7 @@ int preminute;
 int presecond;
 int primeCount = 0;
 int ugoku = 0;
-int valServo = 544;
+int valServo = 1000;
 //int switch1 = 0;
 int switchCount = 0;
 int waitCount = 0;
@@ -30,18 +30,29 @@ void setup() {
   
   lcd.print("hatodokei");
   #if 1
-    setTime(12, 1, 45, 19, 6, 2016);
+    setTime(12, 40, 00, 19, 6, 2016);
   #else
     setTime(86400);
   #endif
 
   Serial.begin(1000000);
   servo.attach(2);
-  servo.write(544);
+  servo.write(1000);
   delay(2000);
   lcd.clear();
   lcd.setCursor(6,1);
   lcd.print(":");
+  
+  Serial.print(primeCount);
+  Serial.print(" ");
+  Serial.println(primeNumber[primeCount]);
+  while(primeNumber[primeCount]<minute()){
+    primeCount += 1;
+    Serial.print(primeCount);
+    Serial.print(":");
+    Serial.println(primeNumber[primeCount]);
+  }
+  
 }
 
 void loop() {
@@ -125,7 +136,7 @@ void loop() {
   if(ugoku==3){
     valServo -= 5;
     servo.write(valServo);
-    if(valServo<=544){
+    if(valServo<=1000){
       ugoku = 0;
     }
   }
@@ -139,7 +150,7 @@ void loop() {
   if(ugoku==1){
     valServo += 20;
     servo.write(valServo);
-    if(valServo>2300){
+    if(valServo>2000){
       ugoku = 2;
     }
   }
@@ -172,8 +183,8 @@ void loop() {
     }
     
   }
-  //Serial.print(nowminute);
-  //Serial.print(" ");
-  Serial.println(valServo);
+  Serial.print(primeCount);
+  Serial.print(" ");
+  Serial.println(primeNumber[primeCount]);
   delay(10);
 }
