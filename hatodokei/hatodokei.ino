@@ -18,6 +18,7 @@ int ugoku = 0;
 int valServo = 544;
 //int switch1 = 0;
 int switchCount = 0;
+int waitCount = 0;
 double MS;
 
 int primeNumber[ ] = {2 , 3, 5, 7, 11,  13,  17,  19,
@@ -29,7 +30,7 @@ void setup() {
   
   lcd.print("hatodokei");
   #if 1
-    setTime(23, 59, 45, 19, 6, 2016);
+    setTime(12, 1, 45, 19, 6, 2016);
   #else
     setTime(86400);
   #endif
@@ -121,22 +122,58 @@ void loop() {
   if(primeCount>17){
     primeCount=0;
   }
-  if(ugoku==2){
-    valServo -= 100;
+  if(ugoku==3){
+    valServo -= 5;
     servo.write(valServo);
     if(valServo<=544){
       ugoku = 0;
     }
   }
+  if(ugoku==2){
+    waitCount += 1;
+    if(waitCount>500){
+      ugoku = 3;
+      waitCount=0;
+    }
+  }
   if(ugoku==1){
-    valServo += 100;
+    valServo += 20;
     servo.write(valServo);
     if(valServo>2300){
       ugoku = 2;
     }
   }
+  if(nowsecond==50){
+    lcd.clear();
+    LiquidCrystal lcd(10,9,8,7,6,5,4);
+    lcd.setCursor(6,1);
+    lcd.print(":");
+    lcd.setCursor(10,1);
+    lcd.print(nowsecond);
+
+    if(nowminute<10){
+      lcd.setCursor(7,1);
+      lcd.print(0);
+      lcd.setCursor(8,1);
+      lcd.print(nowminute);
+    }else{
+      lcd.setCursor(7,1);
+      lcd.print(nowminute);
+    }
+
+    if(nowtime<10){
+      lcd.setCursor(4,1);
+      lcd.print(0);
+      lcd.setCursor(5,1);
+      lcd.print(nowtime);
+    }else{
+      lcd.setCursor(4,1);
+      lcd.print(nowtime);
+    }
+    
+  }
   //Serial.print(nowminute);
   //Serial.print(" ");
   Serial.println(valServo);
-  delay(50);
+  delay(10);
 }
